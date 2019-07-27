@@ -1,6 +1,9 @@
+#!/bin/bash
+
 vDate=`date +%Y%m%d`
 cd /data/wwwroot/mirrors/CVE/list
-mkdir $vDate
+rm -f *
+echo $vDate | tee updated.txt
 wget http://cve.mitre.org/data/downloads/allitems.csv.Z
 wget http://cve.mitre.org/data/downloads/allitems.html.Z
 wget http://cve.mitre.org/data/downloads/allitems.txt.Z

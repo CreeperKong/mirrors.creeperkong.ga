@@ -3,7 +3,7 @@
 # Set Date
 vDate=`date +%Y%m%d`
 
-# Goto Directory
+# Goto Directory (you can change this)
 cd /data/wwwroot/mirrors/CVE/list
 
 # Clean existing content
